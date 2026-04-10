@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard do Cliente</title>
+    <link rel="stylesheet" href="../css/cliente.css">
+</head>
+<body class="tema-claro">
+
+    <header class="topo-dashboard">
+        <h1 class="logo-texto">Portal Contábil</h1>
+
+        <nav aria-label="Ações do cliente">
+            <ul class="acoes-topo">
+                <li><span>Cliente</span></li>
+                <li><a href="index.html" class="btn-sair">Sair</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="layout-dashboard">
+        <aside class="menu-lateral">
+            <nav aria-label="Menu principal do cliente">
+                <ul class="menu-dashboard">
+                    <li><a href="#visao-geral">Visão geral</a></li>
+                    <li><a href="#andamento">Andamento</a></li>
+                    <li><a href="#pendencias">Pendências</a></li>
+                    <li><a href="#funcionarios">Funcionários</a></li>
+                    <li><a href="#banco-horas">Banco de horas</a></li>
+                    <li><a href="#folha">Folha</a></li>
+                    <li><a href="#documentos">Documentos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <section class="conteudo-dashboard" aria-labelledby="titulo-dashboard">
+            <header class="cabecalho-conteudo">
+                <h2 id="titulo-dashboard">Painel do cliente</h2>
+                <p>Acompanhe as informações da empresa, serviços em andamento e dados operacionais.</p>
+            </header>
+
+            <section id="visao-geral" class="bloco-dashboard" aria-labelledby="titulo-visao-geral">
+                <header class="topo-bloco">
+                    <h3 id="titulo-visao-geral">Visão geral</h3>
+                </header>
+
+                <section class="cards-resumo">
+                    <article class="card-resumo">
+                        <h4>Empresa</h4>
+                        <p>--</p>
+                    </article>
+
+                    <article class="card-resumo">
+                        <h4>Serviço atual</h4>
+                        <p>--</p>
+                    </article>
+
+                    <article class="card-resumo">
+                        <h4>Status</h4>
+                        <p>--</p>
+                    </article>
+
+                    <article class="card-resumo">
+                        <h4>Última atualização</h4>
+                        <p>--</p>
+                    </article>
+                </section>
+            </section>
+
+            <section id="andamento" class="bloco-dashboard" aria-labelledby="titulo-andamento">
+                <header class="topo-bloco">
+                    <h3 id="titulo-andamento">Andamento do processo</h3>
+                </header>
+
+                <article class="painel-conteudo">
+                    <p>Área destinada ao acompanhamento das etapas e atualizações realizadas pelo contador.</p>
+                </article>
+            </section>
+
+            <section id="pendencias" class="bloco-dashboard" aria-labelledby="titulo-pendencias">
+                <header class="topo-bloco">
+                    <h3 id="titulo-pendencias">Pendências</h3>
+                </header>
+
+                <article class="painel-conteudo">
+                    <ul class="lista-painel">
+                        <li>--</li>
+                    </ul>
+                </article>
+            </section>
+
+            <section id="funcionarios" class="bloco-dashboard" aria-labelledby="titulo-funcionarios">
+                <header class="topo-bloco">
+                    <h3 id="titulo-funcionarios">Funcionários</h3>
+                </header>
+
+                <article class="painel-conteudo">
+                    <table class="tabela-dashboard">
+                        <thead>
+                            <tr>
+                                <th>Nome</th>
+                                <th>Cargo</th>
+                                <th>Status</th>
+                                <th>Admissão</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Dados virão do banco depois -->
+                        </tbody>
+                    </table>
+                </article>
+            </section>
+
+            <section id="banco-horas" class="bloco-dashboard" aria-labelledby="titulo-banco-horas">
+                <header class="topo-bloco">
+                    <h3 id="titulo-banco-horas">Banco de horas</h3>
+                </header>
+
+                <article class="painel-conteudo">
+                    <table class="tabela-dashboard">
+                        <thead>
+                            <tr>
+                                <th>Funcionário</th>
+                                <th>Horas extras</th>
+                                <th>Horas devidas</th>
+                                <th>Saldo</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Dados virão do banco depois -->
+                        </tbody>
+                    </table>
+                </article>
+            </section>
+
+            <section id="folha" class="bloco-dashboard" aria-labelledby="titulo-folha">
+                <header class="topo-bloco">
+                    <h3 id="titulo-folha">Folha de pagamento</h3>
+                </header>
+
+                <article class="painel-conteudo">
+                    <table class="tabela-dashboard">
+                        <thead>
+                            <tr>
+                                <th>Funcionário</th>
+                                <th>Salário base</th>
+                                <th>Descontos</th>
+                                <th>Salário líquido</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Dados virão do banco depois -->
+                        </tbody>
+                    </table>
+                </article>
+            </section>
+
+            <section id="documentos" class="bloco-dashboard" aria-labelledby="titulo-documentos">
+                <header class="topo-bloco">
+                    <h3 id="titulo-documentos">Documentos</h3>
+                </header>
+
+                <article class="painel-conteudo">
+                    <ul class="lista-painel">
+                        <li>--</li>
+                    </ul>
+                </article>
+            </section>
+
+            <section id="contato" class="bloco-dashboard" aria-labelledby="titulo-contato">
+                <header class="topo-bloco">
+                    <h3 id="titulo-contato">Contato com o contador</h3>
+                </header>
+
+                <article class="painel-conteudo">
+                    <a href="https://wa.me/5511999999999" target="_blank" class="btn-whatsapp">
+                        Falar no WhatsApp
+                    </a>
+                </article>
+            </section>
+        </section>
+    </main>
+
+</body>
+</html>
