@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* TEMA CLARO - PADRÃO */
+body.tema-claro {
+    background-color: #f4f7fb;
+    color: #1f2937;
+}
+
+/* TEMA ESCURO */
+body.tema-escuro {
+    background-color: #0f172a;
+    color: #f8fafc;
+}
+
+.pagina-login {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.card-login {
+    width: 100%;
+    max-width: 420px;
+    padding: 40px 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Card no tema claro */
+body.tema-claro .card-login {
+    background-color: #ffffff;
+}
+
+/* Card no tema escuro */
+body.tema-escuro .card-login {
+    background-color: #1e293b;
+}
+
+.topo-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.logo-texto {
+    font-size: 28px;
+    color: #2563eb;
+}
+
+.btn-tema {
+    border: none;
+    padding: 10px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+body.tema-claro .btn-tema {
+    background-color: #e5e7eb;
+    color: #111827;
+}
+
+body.tema-escuro .btn-tema {
+    background-color: #334155;
+    color: #f8fafc;
+}
+
+.subtitulo {
+    margin-bottom: 30px;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+body.tema-claro .subtitulo {
+    color: #6b7280;
+}
+
+body.tema-escuro .subtitulo {
+    color: #cbd5e1;
+}
+
+.form-login {
+    text-align: left;
+}
+
+.campo {
+    margin-bottom: 20px;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.campo input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+body.tema-claro .campo input {
+    background-color: #ffffff;
+    border: 1px solid #d1d5db;
+    color: #111827;
+}
+
+body.tema-escuro .campo input {
+    background-color: #0f172a;
+    border: 1px solid #475569;
+    color: #f8fafc;
+}
+
+.btn-entrar {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #2563eb;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    transition: 0.3s;
+}
+
+.btn-entrar:hover {
+    background-color: #1d4ed8;
+}
+
+.btn-whatsapp {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+    border-radius: 8px;
+    background-color: #22c55e;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-whatsapp:hover {
+    background-color: #16a34a;
+}

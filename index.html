@@ -6,14 +6,21 @@
     <title>Login | Portal Contábil</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="tema-claro">
 
     <main class="pagina-login">
         <section class="card-login">
-            <img src="images/logo.png" alt="Logo do portal contábil" class="logo">
+            <div class="topo-card">
+                <h1 class="logo-texto">Portal Contábil</h1>
 
-            <h1>Portal Contábil</h1>
-            <p>Acompanhe seus processos e tenha acesso às informações do seu atendimento.</p>
+                <button type="button" id="toggle-tema" class="btn-tema">
+                    Alternar tema
+                </button>
+            </div>
+
+            <p class="subtitulo">
+                Acompanhe seus processos e tenha acesso às informações do seu atendimento.
+            </p>
 
             <form action="#" method="post" class="form-login">
                 <div class="campo">
@@ -35,5 +42,6 @@
         </section>
     </main>
 
+    <script src="script.js"></script>
 </body>
 </html>
