@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard do Contador</title>
+    <link rel="stylesheet" href= "../css/contador.css">
+</head>
+<body class="tema-claro">
+
+    <header class="topo-dashboard">
+        <h1 class="logo-texto">Portal Contábil</h1>
+
+        <nav aria-label="Ações do usuário">
+            <ul class="acoes-topo">
+                <li><span>Contador</span></li>
+                <li><a href="index.html" class="btn-sair">Sair</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="layout-dashboard">
+        <aside class="menu-lateral">
+            <nav aria-label="Menu principal">
+                <ul class="menu-dashboard">
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="#">Clientes</a></li>
+                    <li><a href="#">Calculadoras</a></li>
+                    <li><a href="#">Documentos</a></li>
+                    <li><a href="#">Configurações</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <section class="conteudo-dashboard" aria-labelledby="titulo-dashboard">
+            <header class="cabecalho-conteudo">
+                <h2 id="titulo-dashboard">Painel do contador</h2>
+                <p>Gerencie clientes, acompanhe processos e organize as informações do escritório.</p>
+            </header>
+
+            <section class="resumo-dashboard" aria-label="Resumo geral">
+                <article class="card-resumo">
+                    <h3>Total de clientes</h3>
+                    <p>--</p>
+                </article>
+
+                <article class="card-resumo">
+                    <h3>Pendências</h3>
+                    <p>--</p>
+                </article>
+
+                <article class="card-resumo">
+                    <h3>Atualizações</h3>
+                    <p>--</p>
+                </article>
+
+                <article class="card-resumo">
+                    <h3>Finalizados</h3>
+                    <p>--</p>
+                </article>
+            </section>
+
+            <section class="clientes" aria-labelledby="titulo-clientes">
+                <header class="topo-clientes">
+                    <h2 id="titulo-clientes">Clientes</h2>
+                    <a href="#" class="btn-novo-cliente">+ Novo cliente</a>
+                </header>
+
+                <table class="tabela-clientes">
+                    <thead>
+                        <tr>
+                            <th>Cliente</th>
+                            <th>Serviço</th>
+                            <th>Status</th>
+                            <th>Última atualização</th>
+                            <th>Ação</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- dados do banco virão aqui depois -->
+                    </tbody>
+                </table>
+            </section>
+        </section>
+    </main>
+
+</body>
+</html>
